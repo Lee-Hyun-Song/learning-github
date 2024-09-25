@@ -1,63 +1,96 @@
-<header>
+# Lecture Note on Shell Commands
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+## 1. pwd (Print Working Directory)
+- **명령어**: `pwd`
+- **설명**: 현재 작업 디렉터리의 경로를 출력합니다.
+- **사용 예시**:
+    ```bash
+    $ pwd
+    /home/user
+    ```
 
-# Introduction to GitHub
+## 2. cd (Change Directory)
+- **명령어**: `cd [directory]`
+- **설명**: 다른 디렉터리로 이동할 때 사용합니다.
+- **주요 옵션**:
+    - `/`: 루트 디렉터리로 이동
+    - `..`: 상위 디렉터리로 이동
+    - `~`: 사용자 홈 디렉터리로 이동
+- **사용 예시**:
+    ```bash
+    $ cd /home/user/Documents
+    ```
 
-_Get started using GitHub in less than an hour._
+## 3. ls (List)
+- **명령어**: `ls`
+- **설명**: 현재 디렉터리의 파일 및 디렉터리 목록을 출력합니다.
+- **주요 옵션**:
+    - `-l`: 자세한 정보를 함께 출력 (long format)
+    - `-lh`: 파일 크기를 사람이 읽을 수 있는 단위로 출력
+- **사용 예시**:
+    ```bash
+    $ ls -lh
+    total 12K
+    -rw-r--r-- 1 user group 1.2K Sep 25 12:00 file.txt
+    ```
 
-</header>
+## 4. cp (Copy)
+- **명령어**: `cp [source] [destination]`
+- **설명**: 파일이나 디렉터리를 복사합니다.
+- **사용 예시**:
+    ```bash
+    $ cp file.txt /home/user/backup/
+    ```
 
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
+## 5. mv (Move or Rename)
+- **명령어**: `mv [source] [destination]`
+- **설명**: 파일이나 디렉터리를 이동하거나 이름을 변경할 때 사용합니다.
+- **사용 예시**:
+    ```bash
+    $ mv oldname.txt newname.txt
+    ```
 
-## Finish
+## 6. rm (Remove)
+- **명령어**: `rm [file]`
+- **설명**: 파일을 삭제합니다. 주의: 삭제된 파일은 복구할 수 없습니다.
+- **사용 예시**:
+    ```bash
+    $ rm file.txt
+    ```
 
-_Congratulations, you've completed this course and joined the world of developers!_
+## 7. mkdir (Make Directory)
+- **명령어**: `mkdir [directory name]`
+- **설명**: 새 디렉터리를 생성합니다.
+- **사용 예시**:
+    ```bash
+    $ mkdir new_folder
+    ```
 
-<img src=https://octodex.github.com/images/collabocats.jpg alt=celebrate width=300 align=right>
+## 8. clear (Clear Screen)
+- **명령어**: `clear`
+- **설명**: 터미널 화면을 깨끗하게 지웁니다.
+- **사용 예시**:
+    ```bash
+    $ clear
+    ```
 
-Here's a recap of your accomplishments:
+## 9. exit (Exit Terminal)
+- **명령어**: `exit`
+- **설명**: 터미널 세션을 종료합니다.
+- **사용 예시**:
+    ```bash
+    $ exit
+    ```
 
-- You learned about GitHub, repositories, branches, commits, and pull requests.
-- You created a branch, a commit, and a pull request.
-- You merged a pull request.
-- You made your first contribution! :tada:
+## 10. help and man
+- **명령어**: `help`, `man [command]`
+- **설명**: 각 명령어의 사용법에 대한 도움말을 제공합니다.
+- **사용 예시**:
+    ```bash
+    $ help ls
+    $ man ls
+    ```
 
-### What's next?
-
-If you'd like to make a profile README, use the quickstart instructions below or follow the instructions in the [Managing your profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme) article.
-
-1. Make a new public repository with a name that matches your GitHub username.
-2. Create a file named `README.md` in its root. The "root" means not inside any folder in your repository.
-3. Edit the contents of the `README.md` file.
-4. If you created a new branch for your file, open and merge a pull request on your branch.
-5. Lastly, we'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github).
-
-Check out these resources to learn more or get involved:
-
-- Are you a student? Check out the [Student Developer Pack](https://education.github.com/pack).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
 
 &copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
