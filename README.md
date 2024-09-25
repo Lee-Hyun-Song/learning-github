@@ -1,5 +1,7 @@
 # Lecture Note on Shell Commands
 
+### 202135569 이현송
+
 ## 1. pwd (Print Working Directory)
 - **명령어**: `pwd`
 - **설명**: 현재 작업 디렉터리의 경로를 출력합니다.
@@ -92,6 +94,6 @@
     ```
 
 
-&copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+
 
 </footer>
